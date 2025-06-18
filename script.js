@@ -1,8 +1,6 @@
-const btn = document.querySelector('.btn');
-const input = document.querySelector('.input');
-const searchBox = document.querySelector('.search');
+document.getElementById("enterBtn").addEventListener("click", function() {
+  const statusPara = document.getElementById("status");
 
-btn.addEventListener('click', () => {
-  searchBox.classList.add('active');
-  input.focus();
+  // Replace <p> content with <h1>Entered Metaverse</h1>
+  statusPara.outerHTML = "<h1 id='status'>Entered Metaverse</h1>";
 });
