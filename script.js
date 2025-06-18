@@ -1,5 +1,8 @@
-//your JS code here. If required.
-document.getElementById("enterBtn").addEventListener("click", function () {
-    const statusPara = document.getElementById("status");
-    statusPara.outerHTML = "<h1 id='status'>Entered Metaverse</h1>";
+const btn = document.querySelector('.btn');
+const input = document.querySelector('.input');
+const searchBox = document.querySelector('.search');
+
+btn.addEventListener('click', () => {
+  searchBox.classList.add('active');
+  input.focus();
 });
